@@ -1,6 +1,7 @@
 
 // qual o nome dessas estruturas
-// // module
+// module
+// macro
 #[path="./controllers/home.rs"]
 mod home;
 

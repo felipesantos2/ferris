@@ -2,9 +2,16 @@
 # imagem oficial do rust -> https://hub.docker.com/_/rust
 FROM rust:1.92.0-alpine3.22
 
+RUN apk add --no-cache shadow
+
 RUN apk update
 
-RUN apk add curl wget bash git build-base
+RUN apk add \
+    curl \
+    wget \
+    bash \
+    git \
+    build-base
 
 # "$(id -u)":"$(id -g)"
 

@@ -10,6 +10,7 @@ services:
     stdin_open: true
     # working_dir: /app
     # command: 'apk upgrade'
+    restart: always
     volumes:
       - .:/app
     user: 1001:1001
